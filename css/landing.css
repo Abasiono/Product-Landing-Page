@@ -1,0 +1,170 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 15px;
+}
+
+#header{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top:0;
+    background-color:white;
+    padding:0 20px 0 20px;
+    width:100%;
+}
+
+img{width:150px;
+}
+
+li{display: inline;
+    padding:20px;}
+    
+ul{
+    list-style-type: none;
+}
+
+li a{
+    text-decoration: none;
+    color:pink;
+    
+}
+
+a:hover{
+    background-color: rosybrown;
+}
+
+input[type=submit]:hover{
+    background-color: pink;
+}
+
+#mail{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+input[type=email]{
+    width:100%;
+    padding:10px;
+}
+input[type=submit]{
+    height:30px;
+    padding:10px;
+    text-align: center;
+    width:100%;
+    border:none;
+    margin-top: 4px;
+    background-color: pink;
+}
+
+
+.feature{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding:10px;
+    width:100%;
+}
+.icon{
+    font-size: 60px;
+    color:rosybrown;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+
+
+iframe{
+    border:none;
+    max-width:100%;
+}
+#Events{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 26%;
+}
+
+#Pricing{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.pricing1, .pricing2, .pricing3{
+    border: 1px solid black;
+  margin: 10px;
+    text-align: center;
+    max-height: 500px;
+}
+
+.pricing1>.brand-name{
+    background-color: pink;
+    width:100%;
+    padding:15px 0;
+}
+
+
+
+.select{
+    background-color: pink;
+    width:200px;
+    border: none;
+}
+
+
+.pricing2>.brand-name{
+    background-color: pink;
+    width:100%;
+    padding:15px 0;
+}
+
+
+
+
+.pricing3>.brand-name{
+    background-color: pink;
+    width:100%;
+    padding:15px 0;
+}
+
+
+
+#Pricing>.pricing1,.pricing2,.pricing3{
+    border-radius: 5px;
+}
+
+.select:hover{
+    background-color: rosybrown;
+}
+
+
+/* responsiveness */
+@media screen and (max-width:650px){
+    
+    #Pricing{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .feature{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding:10px;
+        width:100%;
+    }
+   
+}
